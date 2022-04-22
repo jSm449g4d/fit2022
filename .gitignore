@@ -1,0 +1,14 @@
+# Tempfile
+dataset/
+output/
+
+# Javascript/Typescript
+package-lock.json
+node_modules/
+src/
+
+# Python
+__pycache__/
+
+# VScode
+.vscode/
