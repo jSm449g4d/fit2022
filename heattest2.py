@@ -8,7 +8,8 @@ import json
 pattern_name = './dataset/geo-point/*.tweets'
 geo_point=[]
 gp_heat=[]
-roop_num=1
+# 無限
+roop_num=-1
 for name in glob.glob(pattern_name):
     print(name)
     with open(name, 'r',encoding="utf-8") as f:
@@ -29,4 +30,4 @@ print(len(gp_heat))
         
 m = folium.Map(location=gp_heat[0], zoom_start=6)
 folium.plugins.HeatMap(gp_heat, radius=7, blur=5).add_to(m)
-m.save("./output/heattest.html")
+m.save("./output/heattest2.html")
